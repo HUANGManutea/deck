@@ -159,6 +159,20 @@ export default {
 				existingCard.labels = card.labels
 			}
 		},
+		cardIncreaseAttachmentCount(state, cardId) {
+			const existingIndex = state.cards.findIndex(_card => _card.id === cardId)
+			if (existingIndex !== -1) {
+				const existingCard = state.cards.find(_card => _card.id === cardId)
+				Vue.set(state.cards, existingCard.attachmentCount, existingCard.attachmentCount++)
+			}
+		},
+		cardDecreaseAttachmentCount(state, cardId) {
+			const existingIndex = state.cards.findIndex(_card => _card.id === cardId)
+			if (existingIndex !== -1) {
+				const existingCard = state.cards.find(_card => _card.id === cardId)
+				Vue.set(state.cards, existingCard.attachmentCount, existingCard.attachmentCount--)
+			}
+		},
 	},
 	actions: {
 		addCard({ commit }, card) {

@@ -52,6 +52,7 @@ export class AttachmentApi {
 		   url: this.url(`/cards/${cardId}/attachment/${attachmentId}`),
 		   data: formData,
 	   })
+	   console.log(response)
 	   return response.data
 	}
 

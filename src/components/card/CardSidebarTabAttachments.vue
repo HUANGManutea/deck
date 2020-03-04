@@ -88,7 +88,7 @@ export default {
 		return {
 			modalShow: false,
 			file: '',
-			overrideError: null
+			OverrideAttachment: null
 		}
 	},
 	computed: {
@@ -111,9 +111,9 @@ export default {
 			bodyFormData.append('file', e.target.files[0])
 			this.file = e.target.files[0]
 			try {
-				const data = await this.$store.dispatch('createAttachment', { cardId: this.card.id, formData: bodyFormData })
-				console.log(data)
+				await this.$store.dispatch('createAttachment', { cardId: this.card.id, formData: bodyFormData })
 			} catch (e) {
+				this.OverrideAttachment = e.response.data.data
 				this.modalShow = true
 			}
 		},
@@ -135,7 +135,11 @@ export default {
 			bodyFormData.append('cardId', this.card.id)
 			bodyFormData.append('type', 'deck_file')
 			bodyFormData.append('file', this.file)
-			this.$store.dispatch('updateAttachment', { cardId: this.card.id, attachmentId: 1, formData: bodyFormData })
+			this.$store.dispatch('updateAttachment', { 
+				cardId: this.card.id,
+				attachmentId: this.OverrideAttachment.id,
+				formData: bodyFormData 
+			})
 
 			this.modalShow = false
 		},

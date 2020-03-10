@@ -56,7 +56,6 @@ class BoardApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * Return all of the boards that the current user has access to.
@@ -78,7 +77,6 @@ class BoardApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 *
@@ -91,7 +89,6 @@ class BoardApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * @params $title
@@ -106,7 +103,6 @@ class BoardApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * @params $title
@@ -122,7 +118,6 @@ class BoardApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 *
@@ -135,7 +130,6 @@ class BoardApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 *
@@ -148,7 +142,6 @@ class BoardApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 */
 	public function addAcl($boardId, $type, $participant, $permissionEdit, $permissionShare, $permissionManage) {
@@ -158,7 +151,6 @@ class BoardApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 */
 	public function updateAcl($aclId, $permissionEdit, $permissionShare, $permissionManage) {
@@ -168,7 +160,6 @@ class BoardApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 */
 	public function deleteAcl($aclId) {

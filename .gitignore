@@ -1,8 +1,4 @@
-js/node_modules/*
-js/vendor/
-js/public/
-js/build/
-build/
+js/**
 css/style.css
 css/vendor.css
 tests/integration/vendor/
@@ -11,3 +7,4 @@ vendor/
 *.lock
 
 \.idea/
+node_modules

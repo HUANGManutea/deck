@@ -54,7 +54,6 @@ class CardApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * Get a specific card.
@@ -66,7 +65,6 @@ class CardApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * @params $title
@@ -83,7 +81,6 @@ class CardApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 *
@@ -96,7 +93,6 @@ class CardApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * Delete a specific card.
@@ -108,7 +104,6 @@ class CardApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * Assign a label to a card.
@@ -120,7 +115,6 @@ class CardApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * Assign a label to a card.
@@ -132,7 +126,6 @@ class CardApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * Unassign a user from a card
@@ -144,7 +137,6 @@ class CardApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * Assign a user to a card
@@ -156,7 +148,6 @@ class CardApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * Reorder cards

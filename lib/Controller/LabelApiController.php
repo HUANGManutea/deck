@@ -54,7 +54,6 @@ class LabelApiController extends ApiController {
 	
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * Get a specific label.
@@ -66,7 +65,6 @@ class LabelApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * @params $title
@@ -80,7 +78,6 @@ class LabelApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * @params $title
@@ -94,7 +91,6 @@ class LabelApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *	 
 	 * Delete a specific label

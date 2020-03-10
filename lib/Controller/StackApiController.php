@@ -56,7 +56,6 @@ class StackApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * Return all of the stacks in the specified board.
@@ -77,7 +76,6 @@ class StackApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * Return all of the stacks in the specified board.
@@ -89,7 +87,6 @@ class StackApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * @params $title
@@ -104,7 +101,6 @@ class StackApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * @params $title
@@ -119,7 +115,6 @@ class StackApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * Delete the stack specified by $this->request->getParam('stackId').
@@ -131,7 +126,6 @@ class StackApiController extends ApiController {
 
 	/**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 * get the stacks that have been archived.

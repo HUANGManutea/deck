@@ -40,7 +40,6 @@ class AttachmentApiController extends ApiController {
 
     /**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 */
@@ -51,7 +50,6 @@ class AttachmentApiController extends ApiController {
 
     /**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 */
@@ -62,7 +60,6 @@ class AttachmentApiController extends ApiController {
 
     /**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 */
@@ -73,7 +70,6 @@ class AttachmentApiController extends ApiController {
 
     /**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 */
@@ -84,7 +80,6 @@ class AttachmentApiController extends ApiController {
 
     /**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 */
@@ -95,7 +90,6 @@ class AttachmentApiController extends ApiController {
 
     /**
 	 * @NoAdminRequired
-	 * @CORS
 	 * @NoCSRFRequired
 	 *
 	 */

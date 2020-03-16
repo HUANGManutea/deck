@@ -51,6 +51,16 @@ class LabelApiController extends ApiController {
 		$this->labelService = $labelService;		
 		$this->userId = $userId;		
 	}
+
+	/* @NoAdminRequired
+	* @NoCSRFRequired
+	*
+	* Get a specific label.
+	*/
+ public function index() {
+	 $labels = $this->labelService->findAll($this->request->getParam('boardId'));		
+	 return new DataResponse($labels, HTTP::STATUS_OK);
+ }
 	
 	/**
 	 * @NoAdminRequired

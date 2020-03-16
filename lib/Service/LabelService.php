@@ -49,6 +49,19 @@ class LabelService {
 		$this->changeHelper = $changeHelper;
 	}
 
+		/**
+	 * @param $boardId
+	 * @return array
+	 * @throws \OCA\Deck\NoPermissionException
+	 * @throws BadRequestException
+	 */
+	public function findAll($boardId) {
+		if (is_numeric($boardId) === false) {
+			throw new BadRequestException('board id must be a number');
+		}
+		return $this->labelMapper->findAll($boardId);
+	}
+
 	/**
 	 * @param $labelId
 	 * @return \OCP\AppFramework\Db\Entity
